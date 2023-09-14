@@ -36,13 +36,13 @@ const renderCalender=()=>{
         const condition = i >= firstDateIndex && i < lastDateIndex + 1
             ? 'this'
             :'other';
-        dates[i]=`<div class="date">${date}</div>`;
+        dates[i]=`<div class="date"><span class="${condition}">${date}</span></div>`;
     });
     document.querySelector('.dates').innerHTML=dates.join('');
     const today =new Date();
-    if(viewMonth=== today.getMonth() && viewYear === today.getFullYear()){
+    if(viewMonth === today.getMonth() && viewYear === today.getFullYear()){
         for(let date of document.querySelectorAll('.this')){
-            if(+date.innerText===today.getDate()){
+            if(+date.innerText === today.getDate()){
                 date.classList.add('today');
                 break;
             }

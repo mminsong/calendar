@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class rootcontroller{
-    @GetMapping("/use")
+    @GetMapping("/use") //localhost:8000/use
     public String joinForm(){
         return "index";
     }
