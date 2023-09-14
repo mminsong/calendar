@@ -26,6 +26,7 @@ body{
     display: flex;
     border: 1px solid #333333;
     border-right: 5px;
+    border-left: 5px;
 }
 .nav-btn{
     width: 28px;
@@ -36,9 +37,15 @@ body{
     background-color: transparent;
     cursor: pointer;
 }
-.go-today{
-    width: 75px;
+.go-prev{
     border-left: 1px solid #333333;
+}
+.go-today{
+    width: 150px;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+}
+.go-next{
     border-right: 1px solid #333333;
 }
 .days{
